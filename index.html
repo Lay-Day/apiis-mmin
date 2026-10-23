@@ -78,6 +78,17 @@ header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;backgroun
 .hero img{width:84px;height:auto;flex:none}
 .hero h1{color:#fff;font-weight:800;font-size:clamp(1.4rem,3.4vw,2.3rem);letter-spacing:-.01em;line-height:1.15}
 .hero p{color:#C9DBE7;margin-top:.3rem;font-size:.95rem}
+.sched{margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.15);display:grid;gap:.8rem;width:100%}
+.hero .sched p{margin:0}
+.hero .sched .sched-title{font-family:var(--head-font);font-weight:700;color:var(--gold);font-size:1.05rem}
+.sched-row{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem}
+.sched-label{font-family:var(--head-font);font-weight:600;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:#C9DBE7;margin-right:.25rem}
+.slot{display:inline-flex;gap:.45rem;align-items:baseline;padding:.45rem .9rem;border-radius:999px;background:rgba(255,255,255,.1);color:#fff;font-size:.92rem}
+.slot b{color:var(--green)}
+.hero .sched .sched-note{display:flex;gap:.55rem;align-items:flex-start;font-size:.86rem;color:#C9DBE7;line-height:1.55}
+.sched-note svg{width:17px;height:17px;flex:none;margin-top:.15rem;color:var(--gold)}
+.sched-note b{color:#fff}
+@media (max-width:640px){.sched{margin-top:1rem;padding-top:1rem}.hero .sched .sched-title{font-size:.95rem}.slot{font-size:.85rem;padding:.4rem .8rem}.sched-label{width:100%}}
 @media (max-width:640px){.hero{padding:1.25rem 0}.hero .wrap{gap:1rem}.hero img{width:54px}.hero p{font-size:.82rem;line-height:1.4}section{padding:2.75rem 0}.closing{padding:2.75rem 0}}
 
 /* lists */
@@ -206,6 +217,17 @@ footer a{color:#fff}
       <div>
         <h1>Master of Ministry Program</h1>
         <p>Asia-Pacific Institute of International Studies</p>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="sched">
+        <p class="sched-title">APIIS Master of Ministry (MMin) Africa Class 2027–2028</p>
+        <div class="sched-row">
+          <span class="sched-label">Class time</span>
+          <span class="slot"><b>Monday</b> 6:00 PM–8:00 PM EAT</span>
+          <span class="slot"><b>Tuesday</b> 7:00 AM–9:00 AM EAT</span>
+        </div>
+        <p class="sched-note"><svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10" cy="10" r="8"/><path d="M10 5.5V10l3 2" stroke-linecap="round"/></svg><span><b>Take note:</b> All class times are in East Africa Time (EAT). Be sure to check the equivalent time in your locality before registering.</span></p>
       </div>
     </div>
   </div>
